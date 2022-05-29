@@ -1,0 +1,157 @@
+@use "../abstracts/colors" as colors;
+@forward "global";
+
+//==========
+// Mobile
+
+.priser-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5em;
+}
+
+.price-card:first-of-type {
+  margin-bottom: 3em;
+}
+
+.price-card {
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 1em;
+  height: max-content;
+
+  &__title {
+    color: colors.$dark-color;
+  }
+
+  &__line {
+    width: 100%;
+    border: none;
+    background-color: colors.$primary-color;
+    margin: 1em 0;
+  }
+
+  &__line--big {
+    height: 4px;
+  }
+
+  &__line--small {
+    height: 1px;
+  }
+
+  &__price {
+    font-size: 2em;
+    color: colors.$primary-color;
+  }
+
+  &__detail {
+    color: gray;
+  }
+
+  &__moms {
+    color: gray;
+    font-size: 0.5em;
+  }
+
+  &__fjernsupport {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      margin-bottom: 1em;
+    }
+
+    div:nth-child(3) {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1em;
+
+        p {
+          margin-bottom: 0.5em;
+        }
+
+        p:last-of-type {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &__fjernsupport > div {
+    margin-bottom: 2em;
+  }
+
+  &__fjernsupport > div:last-of-type {
+    margin: 0;
+  }
+
+  &__onsite {
+    display: flex;
+    flex-direction: column;
+
+    div:nth-child(3),
+    div:nth-child(4) {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1em;
+      }
+    }
+  }
+
+  &__onsite > div {
+    margin-bottom: 2em;
+  }
+
+  &__onsite > div:last-of-type {
+    margin: 0;
+  }
+
+  &__abonnement {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      margin-bottom: 2em;
+    }
+
+    div {
+      margin-bottom: 2em;
+    }
+
+    ul {
+      list-style-type: disc;
+      list-style-position: inside;
+      margin-left: 15px;
+      line-height: 2;
+    }
+  }
+}
+
+//==========
+// Tablet
+
+@media all and (min-width: 768px) {
+  .priser-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3em;
+  }
+
+  .price-card {
+    width: 28em;
+  }
+}
+
+//==========
+// Desktop
+
+@media all and (min-width: 1100px) {
+}

@@ -1,0 +1,79 @@
+@use "../abstracts/colors" as colors;
+
+//==========
+// Mobile
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-image: linear-gradient(0deg, rgba(black, 0.7), rgba(black, 0.7)), url("/src/images/workspace.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 5%;
+
+    &__forside-heading {
+        font-size: 1.5em;
+        color: white;
+        margin: 0 0 0.5em 0;
+    }
+
+    p {
+        font-size: 0.8em;
+        line-height: 1.5;
+        margin: 0;
+        margin-bottom: 1em;
+        text-align: center;
+        color: white;
+    }
+
+    &__heading {
+        font-size: 3em;
+        color: white;
+    }
+
+    &__phone {
+        color: colors.$primary-color;
+    }
+}
+
+//==========
+// Tablet
+
+@media all and (min-width: 768px) {
+    .hero {
+        &__forside-heading {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1.1em;
+        }
+    }
+}
+
+//==========
+// Desktop
+
+@media (min-width: 1100px) {
+    .hero {
+        height: 62vh;
+        background-position: center 30%;
+        background-attachment: fixed;
+        background-size: 110%;
+        animation: zoomEffect 4s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes zoomEffect {
+        from {
+            background-size: 110%;
+        }
+
+        to {
+            background-size: 100%;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "name": "pcfejl-website-parcel",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "dev": "parcel src/html/**.html",
+        "build": "parcel build 'src/html/**.html'"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Lauritsen1/pcfejl-website-parcel.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Lauritsen1/pcfejl-website-parcel/issues"
+    },
+    "homepage": "https://github.com/Lauritsen1/pcfejl-website-parcel#readme",
+    "devDependencies": {
+        "@parcel/transformer-sass": "^2.6.0",
+        "parcel": "^2.6.0",
+        "sass": "^1.52.1"
+    }
+}

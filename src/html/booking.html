@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <link rel="shortcut icon" href="../images/pcfejl-logo-tab.svg" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="Virus, fejl, computer, pc">
+
+    <meta name="description"
+        content="Hvis du mangler IT hjælp nu, men er uden for vores åbningstid, så er det en god idé at booke en tid til når vi åbner, så du hurtigt får ordnet dit problem
+    Du kan også booke tid, hvis du er interesseret i vores support abonnement, eller vil have os ud til en computer reparation.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../scss/base/booking.scss">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/7c822157fa.js" crossorigin="anonymous"></script>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <title>PCfejl - Booking</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="/"><img class="header__logo" src="../images/pcfejl-logo.svg" alt="PCfejl logo"></a>
+
+        <nav class="nav-tablet">
+            <ul>
+                <li><a class="nav-tablet__link" href="./index.html">Forside</a></li>
+                <li><a class="nav-tablet__link" href="./priser.html">Services & Priser</a></li>
+                <li><a class="nav-tablet__link" href="./backup.html">Backup løsning</a></li>
+                <li><a class="nav__link" href="https://www.pcfejl.dk/assets/media/pcfejl-fjernsupport.exe"
+                        download><button class="download--tablet"><i class="fas fa-desktop"></i></button></a></li>
+            </ul>
+        </nav>
+
+        <nav class="nav">
+            <ul>
+                <li><a class="nav__link" href="./index.html">Forside</a></li>
+                <li><a class="nav__link" href="./priser.html">Services & Priser</a></li>
+                <li><a class="nav__link" href="./backup.html">Backup løsning</a></li>
+                <li><a class="nav__link" href="./booking.html">Booking</a></li>
+                <li><a class="nav__link" href="./faq.html">FAQ</a></li>
+                <li><a class="nav__link" href="./kontakt.html">Kontakt</a></li>
+                <li><a class="nav__link"><button class="download">Start Fjernsupport</button></a></li>
+            </ul>
+        </nav>
+
+        <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+    </header>
+
+    <!-- Hero -->
+    <div class="hero">
+        <h1 class="hero__heading">Booking</h1>
+    </div>
+
+    <main>
+
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <div>
+                <span><a href="/">Forside</a> > <span class="breadcrumbs__current"></span></span>
+            </div>
+        </div>
+
+        <div class="wrapper">
+
+            <div class="booking-container">
+                <div class="booking-container__text">
+                    <h2>Book en tid.</h2>
+                    <p>Her kan du booke en tid til en fjernsupport session.</p>
+                    <p>Hvis du mangler IT hjælp nu, men er uden for vores åbningstid, så er det en god idé at booke en
+                        tid til når vi åbner, så du hurtigt får ordnet dit problem</p>
+                    <p>Du kan også booke et telefonmøde, for at høre mere om vores ydelser, blandet andet omkring vores
+                        abonnementer. </p>
+                    <p>Beskriv venligst hvad bookingen handler om i "Hvad kan vi hjælpe med boksen"</p>
+                    <p>Du kan kun booke en tid i indeværende uge.</p>
+                </div>
+                <div>
+                    <form class="booking-form netlify">
+                        <div id="error"></div>
+                        <input name="name" id="name" type="text" placeholder="Navn">
+                        <input name="email" id="email" type="email" placeholder="Email">
+                        <input name="tlf" id="tlf" type="text" placeholder="Tlf. nr.">
+                        <fieldset class="booking-form__date-time">
+                            <select name="day" id="day">
+                                <option value="null">Vælg en dag</option>
+                                <option value="mandag">Mandag</option>
+                                <option value="tirsdag">Tirsdag</option>
+                                <option value="onsdag">Onsdag</option>
+                                <option value="torsdag">Torsdag</option>
+                                <option value="fredag">Fredag</option>
+                                <option value="lørdag">Lørdag</option>
+                                <option value="Søndag">Søndag</option>
+                            </select>
+                            <select name="time" id="time">
+                                <option value="null">Vælg en tid</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                            </select>
+                        </fieldset>
+                        <textarea name="message" id="message" cols="30" rows="10"
+                            placeholder="Hvad kan vi hjælpe med"></textarea>
+                        <fieldset class="booking-form__btn-container">
+                            <button>Book</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="services">
+            <h3 class="footer__heading">Åbningstider</h3>
+            <ul class="services__list">
+                <li>Mandag - Fredag: 11:00 - 21:00</li>
+                <li>Lørdag: 11:00 - 20:00</li>
+                <li>Søndag: 11:00 - 20:00</li>
+            </ul>
+        </div>
+
+        <div class="contact-info">
+            <h3 class="footer__heading">Kontakt</h3>
+            <ul class="contact-info__list">
+                <li>PCfejl I/S</li>
+                <li id="number-font">CVR: 41822805</li>
+                <li id="number-font"><i class="contact-info__icon fas fa-phone"></i>+45 89 87 07 46</li>
+                <li><i class="contact-info__icon fas fa-envelope"></i><a class="footer__link"
+                        href="mailto:kontakt@pcfejl.dk">kontakt@pcfejl.dk</a></li>
+            </ul>
+        </div>
+
+        <div class="links">
+            <h3 class="footer__heading">Relevante links</h3>
+            <ul class="links__list">
+                <li><a class="footer__link" href="./index.html">Forside</a></li>
+                <li><a class="footer__link" href="./priser.html">Priser</a></li>
+                <li><a class="footer__link" href="./faq.html">Spørgsmål</a></li>
+                <li><a class="footer__link" href="./kontakt.html">Kontakt</a></li>
+                <li><a class="footer__link" href="./cookiepolitik.html">Cookiepolitik</a></li>
+                <li><a class="footer__link" href="./privatlivspolitik.html">Privatlivspolitik</a></li>
+                <li><a class="footer__link" href="./handelsbetingelser.html">Handelsbetingelser</a></li>
+            </ul>
+        </div>
+
+        <div class="social">
+            <h3 class="footer__heading">Følg os</h3>
+            <ul class="social__list">
+                <li><a href="https://www.facebook.com/pcfejl"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://www.instagram.com/pcfejl.dk/"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/booking.js"></script>
+    <script src="../js/breadcrumbs.js"></script>
+
+</body>
+
+</html>
